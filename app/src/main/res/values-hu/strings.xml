@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Borravaló</string>
+    <string name="amount">Fogyasztás</string>
+    <string name="default_percent_value">15%</string>
+    <string name="custom_percent">Egyéni %</string>
+    <string name="tip">Borravaló</string>
+    <string name="total">Összesen</string>
+</resources>

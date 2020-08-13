@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!-- ROW 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/row1"
+        android:orientation="horizontal"
+        style="@style/CustomRow"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/amountRowTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_gravity="right|center_vertical"
+            style="@style/LeadingText"/>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:background="@color/colorPrimary"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            tools:text="1000.00" />
+
+    </LinearLayout>
+
+    <!-- ROW 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/row2"
+        android:orientation="horizontal"
+        style="@style/CustomRow">
+
+        <TextView
+            android:id="@+id/sliderRowTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_percent"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="10dp"
+
+            android:layout_gravity="right|center_vertical"
+            style="@style/LeadingText"/>
+
+        <SeekBar
+            android:id="@+id/sbCustomTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            style="@style/CustomSeekBar"
+            android:progress="30"/>
+
+
+    </LinearLayout>
+
+    <!-- ROW 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/row3"
+        android:orientation="horizontal"
+        style="@style/CustomRow">
+
+        <!-- placeholder -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_gravity="right|center_vertical"/>
+
+        <TextView
+            android:id="@+id/tvDefaultPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="@string/default_percent_value" />
+
+        <TextView
+            android:id="@+id/tvCustomPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="18%"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:layout_gravity="right|center_vertical"/>
+    </LinearLayout>
+
+
+    <!-- ROW 4 -->
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/CustomRow">
+
+        <TextView
+            android:id="@+id/tipRowTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="@string/tip"
+            style="@style/LeadingText"/>
+
+        <TextView
+            android:id="@+id/tvDefaultTipAmount"
+            tools:text="150"
+            style="@style/CalculatedText"/>
+
+        <TextView
+            android:id="@+id/tvCustomTipAmount"
+            tools:text="180"
+            style="@style/CalculatedText"/>
+
+
+    </LinearLayout>
+
+    <!-- ROW 5 -->
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/CustomRow">
+
+        <TextView
+            android:id="@+id/totalRowTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="@string/total"
+            style="@style/LeadingText"/>
+
+        <TextView
+            android:id="@+id/tvDefaultTipTotal"
+            tools:text="1150"
+            style="@style/TotalText"/>
+
+        <TextView
+            android:id="@+id/tvCustomTipTotal"
+            tools:text="1180"
+            style="@style/TotalText"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
